@@ -1,0 +1,21 @@
+{% extends 'home/base.html' %}
+{% block title %}
+        Blog Post
+    {% endblock %}
+    {% block blog %} active {% endblock %}
+
+    {% block body %}
+        <div class="container">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-3 text-primary-emphasis"><h2>{{post.title}}</h2></strong>
+          <h3 class="mb-0"></h3>
+          <div class="mb-1 text-body-secondary">Created : {{post.timestamp}}</div>
+          <div class="mb-3 text-body-secondary">    by <a href="/about">{{post.author}}</a></div>
+          <p class="card-text mb-auto">{{post.content}}</p>
+          
+        </div>
+       
+      </div>
+        </div>
+    {% endblock %}

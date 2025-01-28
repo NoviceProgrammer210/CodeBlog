@@ -1,0 +1,23 @@
+{% extends 'home/base.html' %}
+{% block title %}
+        Home
+    {% endblock %}
+    {% block home %} active {% endblock %}
+
+    {% block page %}
+      
+        Home page
+    {% endblock %}
+
+
+    {% block body %}
+    <div class="container">
+    <div class="card">      
+        <div class="card-body">
+          <h5 class="card-title">CodeBlog</h5>
+          <p class="card-text">Code blog read our Blogs.</p>
+          <a href="/blog" class="btn btn-primary">Click Here to See our Blogs</a>
+        </div>
+      </div>
+      
+    {% endblock %}
